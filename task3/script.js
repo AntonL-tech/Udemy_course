@@ -83,7 +83,7 @@ function checkSavings() {
         let save = +prompt('Какова сумма накоплений', '');
         let percent = +prompt('Под какой процент?', '');
 
-        appData.monthIncome = save / 100 / 12 * percent;
+        appData.monthIncome = (save / 100 / 12 * percent).toFixed(2);
 
         console.log('Доход в месяц с вашего депозита: ' + appData.monthIncome);
         }
