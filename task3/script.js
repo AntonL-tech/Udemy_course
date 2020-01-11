@@ -57,12 +57,12 @@ chooseOptExpenses();
 
 
 
-function detectDayBudget(days) {
-    appData.moneyPerday = +(appData.budget / days).toFixed(2);
+function detectDayBudget() {
+    appData.moneyPerday = +(appData.budget / 30).toFixed(2);
     console.log('Ежедневный доход: ' + appData.moneyPerday);
 }
 
-detectDayBudget(30);
+detectDayBudget();
 
 function detectLevel() {
     if (appData.moneyPerday < 100) {
